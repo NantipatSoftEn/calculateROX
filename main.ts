@@ -39,9 +39,15 @@ function simulateRefine(currentLevel:number): number {
   }
   
 
-  // ตัวอย่างการใช้งาน
+let refinesLv:number[] = []
 let currentRefineLevel = 1; 
+
 for (let i = 0; i <  10; i++) { // จำลองการตีบวก 10 ครั้ง
   currentRefineLevel = simulateRefine(currentRefineLevel);
-  console.log(`ผลการตีบวกครั้งที่ ${i + 1}:  +${currentRefineLevel}`);
+//   console.log(`ผลการตีบวกครั้งที่ ${i + 1}:  +${currentRefineLevel}`);
+  console.log(currentRefineLevel)
+  refinesLv.push(currentRefineLevel)
 }
+
+// console.log(refinesLv);
+
